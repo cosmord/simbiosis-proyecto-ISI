@@ -1,0 +1,105 @@
+flowchart TB
+    RAIZ["Fundamentos de la Ingeniería del Software<br/>(el software · sus problemas · la disciplina · quien la ejerce)"]
+
+    subgraph RAMA1["1.1 — El software"]
+        direction TB
+        N10["Software"]
+        N11["Doble función<br/>producto · vehículo de información y conocimiento"]
+        N12["Composición<br/>programas · configuración ·<br/>documentación · manuales"]
+        N13["Elemento lógico<br/>coste = tiempo, no materiales<br/>→ deuda técnica"]
+        N14["A medida ↔ genérico<br/>control y flexibilidad vs.<br/>economía de escala"]
+        N15["Dominios de aplicación<br/>sistema · aplicación · científico ·<br/>integrado · línea de productos ·<br/>web/móvil · IA"]
+        N16["Sistemas de información<br/>ERP · CRM · DSS<br/>fiabilidad · datos · concurrencia ·<br/>cambio · integración"]
+        N17["Software heredado (legacy)<br/>en uso por valor probado,<br/>no por estar al día"]
+        N18["Atributos de calidad<br/>funcionalidad · mantenibilidad ·<br/>confiabilidad · eficiencia · usabilidad"]
+
+        N10 -->|"cumple una"| N11
+        N10 -->|"se compone de"| N12
+        N12 -->|"sus componentes son fundamentalmente"| N13
+        N10 -->|"puede desarrollarse como"| N14
+        N10 -->|"se aplica en"| N15
+        N15 -->|"incluye, entre otros"| N16
+        N10 -->|"puede permanecer en uso como"| N17
+        N10 -->|"debe satisfacer"| N18
+    end
+
+    subgraph RAMA2["1.2 — Retos y errores del desarrollo"]
+        direction TB
+        N20["Desarrollo de software:<br/>retos y errores"]
+        N21["Causas de los problemas<br/>complejidad · falta de metodología ·<br/>comunicación · seguridad ·<br/>mantenimiento · talento · estimación"]
+        N22["Consecuencias<br/>retrasos · sobrecostes · deuda técnica ·<br/>pérdida de datos y de confianza"]
+        N23["Por qué persisten errores<br/>complejidad · plataformas ·<br/>cambios · plazos · comunicación"]
+        N24["Casos históricos<br/>Therac-25 · Mars Climate Orbiter · Ariane 5 ·<br/>Heartbleed · Knight Capital · Boeing 737 MAX"]
+        N25["Crisis del software<br/>(años 60)"]
+
+        N20 -->|"se explican por"| N21
+        N21 -->|"pueden producir"| N22
+        N20 -->|"persisten por"| N23
+        N20 -->|"se ilustran mediante"| N24
+        N20 -.->|"históricamente se manifiestan como"| N25
+    end
+
+    subgraph RAMA3["1.3 — La disciplina: Ingeniería del Software"]
+        direction TB
+        N30["Ingeniería del Software"]
+        N31["Formalización de la disciplina<br/>1968 · OTAN · Bauer"]
+        N31B["Margaret Hamilton (MIT)<br/>pionera contemporánea ·<br/>software de navegación, misión Apolo"]
+        N32["Definiciones<br/>Pressman · Sommerville"]
+        N33["Objetivos<br/>calidad · coste/tiempo · buenas prácticas ·<br/>complejidad · estandarización ·<br/>documentación · satisfacción"]
+        N34["Método de Pólya (1945)<br/>comprender · diseñar un plan ·<br/>ejecutar · revisar<br/>↔ ciclo de vida del software"]
+        N35["Frente a otras disciplinas<br/>programación individual ·<br/>Ciencia de la Computación ·<br/>Ingeniería de Sistemas"]
+        N36["Modelado<br/>dominio del problema (análisis) vs.<br/>dominio de la solución (diseño) · UML"]
+
+        N30 -->|"se formaliza históricamente en"| N31
+        N31 -.->|"es contemporánea de"| N31B
+        N30 -->|"se define en"| N32
+        N30 -->|"persigue"| N33
+        N30 -->|"adopta métodos sistemáticos como"| N34
+        N30 -->|"se distingue de"| N35
+        N30 -->|"emplea"| N36
+    end
+
+    subgraph RAMA4["1.4 — El/la ingeniero/a de software"]
+        direction TB
+        N40["Ingeniero/a de software"]
+        N41["Ciclo de vida y metodologías<br/>Scrum · Kanban · DevOps"]
+        N42["Roles especializados<br/>frontend · backend · arquitectura ·<br/>datos · UI/UX · QA · seguridad ·<br/>ML · cloud · accesibilidad…"]
+        N43["Ruta técnica<br/>Software Engineer → … → Fellow"]
+        N44["Ruta de gestión<br/>Manager → … → CTO"]
+
+        N40 -->|"trabaja a lo largo de"| N41
+        N40 -->|"puede especializarse en"| N42
+        N40 -->|"puede progresar por"| N43
+        N40 -->|"también puede progresar por"| N44
+        N43 -.->|"rutas paralelas, no excluyentes"| N44
+    end
+
+    %% Columna vertebral conceptual del tema
+    RAIZ -->|"se estudia comenzando por"| N10
+    N10 -->|"su desarrollo se enfrenta a"| N20
+    N20 -->|"para abordarlos sistemáticamente surge"| N30
+    N30 -->|"se ejerce profesionalmente mediante"| N40
+
+    %% Relación histórica específica: conecta conceptos concretos
+    N25 -.->|"motiva la formalización de"| N31
+
+    %% Dimensiones transversales: fuera de la secuencia principal
+    subgraph TRANS["Calidad, estándares y ética — dimensiones transversales"]
+        direction LR
+        T1["Calidad<br/>atributos del producto software"]
+        T2["Estándares y cuerpos de conocimiento<br/>SWEBOK · SE2014/SEEK ·<br/>ISO/IEC/IEEE 29148 · UML"]
+        T3["Ética profesional<br/>Código de Ética ACM/IEEE-CS<br/>8 principios"]
+        T1 ~~~ T2 ~~~ T3
+    end
+
+    N18 -.->|"se integra en la dimensión de"| T1
+    N30 -.->|"se apoya en"| T2
+    N40 -.->|"está sujeta a"| T3
+
+    %% Estilo: se resaltan únicamente los conceptos que articulan la narración.
+    classDef backbone fill:#f5f5f5,stroke:#9B2A2A,stroke-width:2px,color:#1a1a1a
+    classDef transversal fill:#fafafa,stroke:#9B2A2A,stroke-width:1.5px,stroke-dasharray:5 5,color:#1a1a1a
+
+    class RAIZ,N10,N20,N30,N40 backbone
+    class T1,T2,T3 transversal
+    style TRANS fill:#fafafa,stroke:#9B2A2A,stroke-width:2px,stroke-dasharray:5 5,color:#1a1a1a

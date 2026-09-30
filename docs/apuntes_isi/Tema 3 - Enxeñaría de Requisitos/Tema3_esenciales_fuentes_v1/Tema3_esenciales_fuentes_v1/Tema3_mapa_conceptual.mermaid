@@ -1,0 +1,67 @@
+%% Mapa conceptual generado con asistencia de IA generativa
+%% Declaracion de transparencia: ver disclaimer completo en Tema3_hoja_esenciales.md.
+%% Pendiente de validacion por el profesor responsable antes de su uso docente.
+%%
+%% (c) Enrique Barreiro Alonso (Universidade de Vigo), 2026. Distribuido bajo licencia
+%% Creative Commons Reconocimiento-NoComercial 4.0 Internacional (CC BY-NC 4.0).
+%% https://creativecommons.org/licenses/by-nc/4.0/deed.es
+
+%%{init: {'flowchart': {'curve': 'basis', 'nodeSpacing': 35, 'rankSpacing': 45}} }%%
+flowchart TD
+    subgraph IR["Ingeniería de Requisitos (identificar · analizar · documentar · validar · gestionar)"]
+        direction LR
+
+        subgraph RAMA1["1. Elicitación de requisitos"]
+            direction TB
+            N11["Técnicas conversacionales<br/>(elab. derivada)<br/>entrevistas · reuniones · talleres · brainstorming"]
+            N12["Técnicas observacionales<br/>(elab. derivada)<br/>observación directa"]
+            N13["Técnicas documentales<br/>(elab. derivada)<br/>cuestionarios · análisis de interfaces y documentación"]
+            N11 ~~~ N12 ~~~ N13
+        end
+
+        subgraph RAMA2["2. Taxonomía y análisis de requisitos"]
+            direction TB
+            STK["Stakeholders<br/>tipos · conflictos · mediación del analista"]
+            BO["BO — Objetivos de negocio<br/>el porqué"]
+            UR["UR — Requisitos de usuario<br/>qué necesita el usuario"]
+            FR["FR — Requisitos funcionales<br/>qué debe hacer el sistema"]
+            NFR["NFR — No funcionales<br/>calidad · restricciones · interfaces"]
+            BR["BR — Reglas de negocio<br/>políticas y directrices organizativas"]
+
+            STK --> BO
+            BO --> UR --> FR
+            NFR -.condiciona.-> FR
+            BR -.condiciona.-> FR
+        end
+
+        subgraph RAMA3["3. Especificación de requisitos"]
+            direction TB
+            N31["Historias de usuario (Ágil)<br/>Como/necesito/para + criterios de aceptación + DoD"]
+            N32["Casos de uso (UML)<br/>actor + escenario principal/alternativo"]
+            N33["Relaciones UML<br/>include (obligatoria) · extend (opcional) · generalización"]
+
+            N31 -.se desglosa en / complementa.-> N32
+            N32 --> N33
+        end
+
+        %% Flujo lógico entre fases del proceso
+        RAMA1 -. "descubre y alimenta" .-> RAMA2
+        RAMA2 -. "se formaliza en" .-> RAMA3
+    end
+
+    %% Cluster transversal de calidad y gestión
+    subgraph TRANS["Calidad, priorización y gestión (prácticas transversales a todo el proceso)"]
+        direction LR
+        T1["Características de calidad<br/>ISO/IEC/IEEE 29148"]
+        T2["Priorización colaborativa<br/>MoSCoW · Kano · 100 ptos · valor/coste · Pareto"]
+        T3["Trazabilidad y control de cambios<br/>matriz de trazabilidad · CCB"]
+        T4["Herramientas de gestión<br/>Jira · DOORS · Redmine"]
+
+        T1 --> T2 --> T3 --> T4
+    end
+
+    %% Relación global entre el proceso de IR y la capa transversal
+    IR -. "se rige y gestiona con" .-> TRANS
+
+    style IR fill:#fcfcfc,stroke:#9B2A2A,stroke-width:2px,color:#1a1a1a
+    style TRANS fill:#f5f5f5,stroke:#9B2A2A,stroke-width:2px,stroke-dasharray: 5 5,color:#1a1a1a

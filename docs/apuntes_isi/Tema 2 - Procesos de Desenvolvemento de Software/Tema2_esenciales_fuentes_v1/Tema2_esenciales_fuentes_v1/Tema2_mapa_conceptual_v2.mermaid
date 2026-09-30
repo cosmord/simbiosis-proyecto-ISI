@@ -1,0 +1,56 @@
+%% Mapa conceptual generado con asistencia de IA generativa
+%% Declaracion de transparencia: ver disclaimer completo en Tema2_hoja_esenciales.md.
+%% Pendiente de validacion por el profesor responsable antes de su uso docente.
+
+%%{init: {'flowchart': {'curve': 'basis', 'nodeSpacing': 35, 'rankSpacing': 45}} }%%
+flowchart TD
+    subgraph PDS["Proceso de desarrollo de software (requisitos · análisis · diseño · implementación · pruebas · integración · mantenimiento)"]
+        direction LR
+
+        subgraph SEC["Modelos secuenciales"]
+            direction TB
+            CAS["Cascada<br/>fases completas, documentadas,<br/>una tras otra"]
+            V["Modelo en V<br/>cascada + verificación/validación<br/>explícita por nivel"]
+            CAS -.evoluciona hacia.-> V
+        end
+
+        subgraph ITI["Modelos iterativos e incrementales"]
+            direction TB
+            EVO["Desarrollo evolutivo<br/>exploratorio / desechable"]
+            ESP["Espiral (Boehm, 1988)<br/>4 sectores por ciclo:<br/>objetivos/restricciones ·<br/>evaluación y reducción de riesgos ·<br/>desarrollo y validación ·<br/>planificación del siguiente ciclo<br/>(muy poco utilizado en la industria)"]
+            UP["Proceso Unificado (UP)<br/>Jacobson · Booch · Rumbaugh (1999)<br/><br/>pilares: dirigido por casos de uso ·<br/>centrado en arquitectura ·<br/>iterativo e incremental<br/><br/>fases: Inicio · Elaboración ·<br/>Construcción · Transición"]
+            EVO --> ESP --> UP
+        end
+
+        subgraph AGI["Modelos ágiles"]
+            direction TB
+            MAN["Manifiesto Ágil (2001)<br/>4 valores · 12 principios"]
+            SCR["Scrum<br/>5 valores · roles ·<br/>Product/Sprint Backlog · Incremento (DoD) ·<br/>eventos: Sprint · Planning ·<br/>Daily · Review · Retrospective"]
+            XP["Extreme Programming (XP)<br/>5 valores · TDD ·<br/>refactorización · pair programming ·<br/>propiedad colectiva · cliente in situ"]
+            OTR["Otros marcos<br/>(Crystal, FDD, …)"]
+            MAN --> SCR
+            MAN --> XP
+            MAN --> OTR
+        end
+
+        %% Relaciones y evolución entre los tres paradigmas
+        SEC -. "adaptación al cambio ↑<br/>trazabilidad ↓" .-> ITI
+        ITI -. "frecuencia de entrega ↑<br/>documentación formal ↓" .-> AGI
+    end
+
+    subgraph TRANS["Prácticas transversales (no son modelos de proceso; cruzan toda la taxonomía)"]
+        direction LR
+        CV["Control de versiones<br/>repositorio · commit ·<br/>branch · merge · tag"]
+        CICD["CI/CD (progresión)<br/>CI (validación automática) →<br/>Entrega continua (listo para desplegar) →<br/>Despliegue continuo (a producción)"]
+        DOPS["DevOps<br/>colaboración Dev + Ops + QA"]
+        IA["IA como herramienta<br/>del proceso<br/>(no como modelo nuevo)"]
+
+        CV --> CICD --> DOPS
+        DOPS ~~~ IA
+    end
+
+    %% Relación global entre el proceso de software y las prácticas transversales
+    PDS -. "se apoyan en" .-> TRANS
+
+    style PDS fill:#fcfcfc,stroke:#9B2A2A,stroke-width:2px,color:#1a1a1a
+    style TRANS fill:#f5f5f5,stroke:#9B2A2A,stroke-width:2px,stroke-dasharray: 5 5,color:#1a1a1a
