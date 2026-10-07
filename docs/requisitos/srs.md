@@ -15,7 +15,7 @@ parte de esta SRS, en la sección 9.
 En esta versión se fija la estructura y se incorpora el contexto confirmado en
 el Documento de Visión y Alcance y en el acta de captura de A03. Los requisitos
 de usuario y funcionales ya están consolidados en el catálogo. Los requisitos
-no funcionales y el glosario permanecen pendientes. Ningún apartado pendiente
+no funcionales. El glosario se encuentra en la sección 9. Ningún apartado pendiente
 autoriza a completar información por suposición.
 
 ## Índice
