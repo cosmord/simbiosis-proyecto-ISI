@@ -4,6 +4,9 @@
 | --- | --- | --- |
 | 1.0 | 05/10/2026 | Vigente |
 
+Diagrama de casos de uso de E1
+![Diagrama de casos de uso de E1](docs\modelos\casos-de-usos-acceso-cuentas-ayuda-L04.png)
+
 Este plan define el trabajo previsto para E1, la primera iteración de Elaboración. Selecciona la funcionalidad que se estudiará. También establece las actividades, los recursos, los productos y los criterios de evaluación.
 
 El plan pertenece a un proyecto simulado. La duración, el equipo, el esfuerzo y el coste son supuestos de esta simulación. Los requisitos proceden de los documentos del proyecto.
