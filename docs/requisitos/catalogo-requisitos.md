@@ -4,8 +4,8 @@
 
 **Versión:** 1.10  
 **Fecha:** 23/09/2026  
-**Estado:** Base funcional consolidada: UR y FR canónicos; NFR pendientes  
-**Fuente de verdad:** este catálogo contiene el texto canónico de los requisitos de usuario (UR) y funcionales (FR). Incorporará también los requisitos no funcionales (NFR) cuando se consoliden.
+**Estado:** Base funcional consolidada: UR, FR y NFR canónicos  
+**Fuente de verdad:** este catálogo contiene el texto canónico de los requisitos de usuario (UR), funcionales (FR) y no funcionales (NFR).
 
 Este documento complementa la [Especificación de requisitos de software](./srs.md). La SRS organiza el contexto, el alcance, las decisiones pendientes y los modelos; este catálogo conserva una única copia de cada requisito y sus relaciones.
 

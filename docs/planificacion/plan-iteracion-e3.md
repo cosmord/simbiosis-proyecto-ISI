@@ -22,7 +22,7 @@ El plan pertenece a un proyecto simulado. La duración, el equipo, el esfuerzo y
 | Capacidad | 180 horas de trabajo del equipo |
 | Esfuerzo asignado | 162 horas para actividades y 18 horas de reserva |
 
-Las referencias de requisitos son la [Visión y Alcance](../vision/vision_y_alcance.md), versión 2.4, la [SRS](../requisitos/srs.md), versión 0.14, y el [catálogo de requisitos](../requisitos/catalogo-requisitos.md), versión 1.13. Se consultan también las actas enlazadas en esos documentos.
+Las referencias de requisitos son la [Visión y Alcance](../vision/vision_y_alcance.md), versión 2.4, la [SRS](../requisitos/srs.md), versión 0.10, y el [catálogo de requisitos](../requisitos/catalogo-requisitos.md), versión 1.10. Se consultan también las actas enlazadas en esos documentos.
 
 UR significa requisito de usuario. FR significa requisito funcional. NFR significa requisito no funcional. Los identificadores de este plan remiten al catálogo. Las descripciones resumen el alcance seleccionado y no sustituyen la redacción canónica de los requisitos.
 

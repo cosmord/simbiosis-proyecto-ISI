@@ -113,7 +113,7 @@ La imagen se conserva en el repositorio con el nombre usado para esta referencia
 
 ## 5 Respaldo en los requisitos
 
-Los identificadores remiten al [catálogo canónico de requisitos](../requisitos/catalogo-requisitos.md), versión 1.13, y a la [SRS](../requisitos/srs.md), versión 0.14. UR identifica un requisito de usuario; FR, un requisito funcional; NFR, un requisito no funcional.
+Los identificadores remiten al [catálogo canónico de requisitos](../requisitos/catalogo-requisitos.md), versión 1.10, y a la [SRS](../requisitos/srs.md), versión 0.10. UR identifica un requisito de usuario; FR, un requisito funcional; NFR, un requisito no funcional.
 
 | Elemento del modelo | UR y FR de referencia | NFR pertinentes | Relación con los requisitos |
 | --- | --- | --- | --- |

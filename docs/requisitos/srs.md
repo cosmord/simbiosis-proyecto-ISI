@@ -4,7 +4,7 @@
 
 **Versión:** 0.10  
 **Fecha:** 23/09/2026  
-**Estado:** Base documental con UR y FR consolidados; NFR y glosario pendientes  
+**Estado:** Base documental con UR, FR y NFR consolidados; glosario vigente  
 **Destinatarios:** partes interesadas del proyecto
 
 Este documento reúne la especificación de requisitos de software (SRS) de
@@ -14,9 +14,10 @@ parte de esta SRS, en la sección 9.
 
 En esta versión se fija la estructura y se incorpora el contexto confirmado en
 el Documento de Visión y Alcance y en el acta de captura de A03. Los requisitos
-de usuario y funcionales ya están consolidados en el catálogo. Los requisitos
-no funcionales. El glosario se encuentra en la sección 9. Ningún apartado pendiente
-autoriza a completar información por suposición.
+de usuario y funcionales ya están consolidados en el catálogo, y los requisitos
+no funcionales se registran igualmente en él. El glosario se encuentra en la
+sección 9. Ningún apartado pendiente autoriza a completar información por
+suposición.
 
 ## Índice
 
