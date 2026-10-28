@@ -50,7 +50,7 @@ los sustituyen.
 - `BO-0X` identifica un objetivo de negocio.
 - `UR-0X` identifica un requisito de usuario.
 - `FR-0XX` identifica un requisito funcional.
-- `NFR-0X` identifica un requisito no funcional.
+- `NFR-00X` identifica un requisito no funcional.
 - `UC-0X` identifica un caso de uso cuando sea necesario enlazarlo desde otro
   artefacto.
 
@@ -281,7 +281,7 @@ enlazar a los términos de esta sección, pero no los definirá de nuevo.
 | **Dato fisiológico** | Medición corporal básica introducida manualmente por el paciente (peso, altura, presión arterial sistólica y diastólica, frecuencia cardíaca y temperatura corporal) con unidades fijas, distinta de los parámetros de laboratorio. | UR-05, FR-041, FR-042 |
 | **Parámetro de laboratorio** | Resultado de una analítica (glucosa, colesterol, ferritina, PCR, vitamina D, etc.) introducido por el paciente con fecha, valor numérico y unidad seleccionada de una lista predefinida. El sistema admite la creación de parámetros personalizados. | UR-05, FR-042 |
 | **Reporte** | Notificación formal realizada por un usuario sobre contenido inapropiado (receta, comentario, publicación o perfil), clasificado en categorías como spam, contenido ofensivo, información errónea o lenguaje inapropiado, y gestionado por el coordinador desde el panel de moderación. | UR-09, UR-10, FR-120 a FR-126, FR-136 a FR-148 |
-| **Disponibilidad planificada** | Porcentaje de tiempo de servicio mensual (mínimo 99,5 %) excluyendo los mantenimientos anunciados con al menos 48 horas de antelación, de duración inferior a 4 horas mensuales y ejecutados preferentemente entre las 02:00 y las 06:00 (hora peninsular española). | Acta §2.1.4, §2.1.5, NFR-03 |
+| **Disponibilidad planificada** | Porcentaje de tiempo de servicio mensual (mínimo 99,5 %) excluyendo los mantenimientos anunciados con al menos 48 horas de antelación, de duración inferior a 4 horas mensuales y ejecutados preferentemente entre las 02:00 y las 06:00 (hora peninsular española). | Acta §2.1.4, §2.1.5, NFR-001 |
 
 ## 10. Modelos de análisis
 

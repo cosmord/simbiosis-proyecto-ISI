@@ -91,7 +91,7 @@ El punto de partida para cualquier trabajo sobre requisitos es:
 docs/requisitos/catalogo-requisitos.md
 ```
 
-Contiene los **13 UR**, **217 FR** y **8 NFR** vigentes del proyecto.
+Contiene los **13 UR**, **211 FR** y **15 NFR** vigentes del proyecto.
 
 ### 3. Consultar la SRS para contexto
 
@@ -136,7 +136,7 @@ git push origin main
 | `BO-0X` | Objetivo de negocio |
 | `UR-0X` | Requisito de usuario |
 | `FR-0XX` | Requisito funcional |
-| `NFR-0X` | Requisito no funcional |
+| `NFR-00X` | Requisito no funcional |
 | `UC-0X` | Caso de uso |
 
 ### Reglas de redacción
@@ -162,7 +162,10 @@ Una línea base (versión estable de la documentación) se declara mediante:
 
 | Tag | Fecha | Contenido |
 | :--- | :--- | :--- |
-| *(pendiente)* | — | — |
+| v0.9.0 | 28/09/2026 | Línea base inicial para L3: visión y alcance, actas de captura y aclaración, SRS v0.9, UR y FR, y estructura del repositorio. |
+| v0.10.0 | 21/10/2026 | Modelo de casos de uso completado con E1 y E2, actas de acuerdos de UC-05 y UC-21, y planes de iteración E1 a E3. |
+
+Ambas etiquetas figuran declaradas en el CHANGELOG pero aún no existen en Git; deben crearse sobre los commits correspondientes a cada entrega.
 
 ---
 
@@ -177,24 +180,4 @@ Una línea base (versión estable de la documentación) se declara mediante:
 
 ---
 
-> **Nota:** Este es un proyecto ficticio , aunque cuenta con una web REAL demo, con fines docentes dentro de la asignatura *Enxeñaría do Software I* del Grado en Ingeniería Informática de la Universidade de Vigo (ESEI).
-```
-
----
-
-### 🔧 Qué he mejorado respecto al original
-
-| Aspecto | Antes | Ahora |
-| :--- | :--- | :--- |
-| **Contexto del dominio** | Genérico ("proyecto ficticio") | Describe la plataforma EII y su propósito |
-| **Navegación** | Sin índice | Índice con anclas internas |
-| **Estado** | No se mencionaba | Tabla con progreso de prácticas L01–L11 |
-| **Estructura** | Árbol sin ejemplos de archivos | Árbol con archivos clave y descripciones inline |
-| **Onboarding** | Ausente | Sección "Cómo empezar" con comandos |
-| **Git** | Solo mencionaba tags | Tabla de convenciones + ejemplo de commit |
-| **Identificadores** | No explicados | Tabla de prefijos BO/UR/FR/NFR/UC |
-| **Reglas de redacción** | No incluidas | Patrones de UR, FR y NFR |
-| **Herramientas** | Ausente | Tabla con Git, NotebookLM, Moovi |
-| **Visual** | Sin badges | Badges de estado, formato y asignatura |
-
----
+> **Nota:** Este es un proyecto ficticio, aunque cuenta con una web REAL demo, con fines docentes dentro de la asignatura *Enxeñaría do Software I* del Grado en Ingeniería Informática de la Universidade de Vigo (ESEI).
